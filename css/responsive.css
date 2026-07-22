@@ -1,0 +1,486 @@
+/* ==================== TABLET (768px and below) ==================== */
+@media (max-width: 768px) {
+    .nav-content {
+        padding: 1rem;
+    }
+
+    .app-logo {
+        font-size: 1.4rem;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: 0;
+        flex-direction: column;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        padding: 1rem;
+        gap: 0;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .nav-menu li {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .nav-menu li:last-child {
+        border-bottom: none;
+    }
+
+    .nav-menu a {
+        padding: 1rem;
+        text-align: right;
+    }
+
+    .main-content {
+        padding: 1rem;
+    }
+
+    .page-header h1 {
+        font-size: 2rem;
+    }
+
+    .page-header p {
+        font-size: 1rem;
+    }
+
+    .welcome-section {
+        padding: 2rem 1rem;
+    }
+
+    .welcome-section h1 {
+        font-size: 2rem;
+    }
+
+    .welcome-section p {
+        font-size: 1.1rem;
+    }
+
+    .features-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 1rem;
+    }
+
+    .feature-card {
+        padding: 1.5rem 1rem;
+    }
+
+    .feature-icon {
+        font-size: 2.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .feature-card h3 {
+        font-size: 1rem;
+    }
+
+    .feature-card p {
+        font-size: 0.85rem;
+    }
+
+    .prayers-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 1rem;
+    }
+
+    .prayer-btn {
+        padding: 1rem;
+    }
+
+    .prayer-number {
+        font-size: 1.5rem;
+    }
+
+    .prayer-name {
+        font-size: 0.95rem;
+    }
+
+    .prayer-desc {
+        font-size: 0.8rem;
+    }
+
+    .prayer-content {
+        padding: 1.5rem;
+        max-height: 500px;
+        font-size: 1rem;
+    }
+
+    .bible-buttons {
+        grid-template-columns: 1fr;
+    }
+
+    .bible-btn {
+        padding: 1.2rem;
+        font-size: 1rem;
+    }
+
+    .about-card {
+        padding: 1.5rem;
+    }
+
+    .about-card h2 {
+        font-size: 1.6rem;
+    }
+}
+
+/* ==================== MOBILE (480px and below) ==================== */
+@media (max-width: 480px) {
+    .navbar {
+        position: relative;
+    }
+
+    .nav-content {
+        padding: 0.8rem 0.5rem;
+        justify-content: space-between;
+    }
+
+    .app-logo {
+        font-size: 1.2rem;
+    }
+
+    .main-content {
+        padding: 0.8rem;
+    }
+
+    .page-header {
+        margin-bottom: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .page-header h1 {
+        font-size: 1.5rem;
+    }
+
+    .page-header p {
+        font-size: 0.95rem;
+    }
+
+    .welcome-section {
+        padding: 1.5rem 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .welcome-section h1 {
+        font-size: 1.5rem;
+    }
+
+    .welcome-section p {
+        font-size: 1rem;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+        gap: 0.8rem;
+    }
+
+    .feature-card {
+        padding: 1.2rem 1rem;
+    }
+
+    .feature-icon {
+        font-size: 2rem;
+    }
+
+    .feature-card h3 {
+        font-size: 0.95rem;
+    }
+
+    .feature-card p {
+        font-size: 0.8rem;
+    }
+
+    .home-footer {
+        padding: 1rem;
+        font-size: 0.9rem;
+    }
+
+    .prayers-grid {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        gap: 0.8rem;
+    }
+
+    .prayer-btn {
+        padding: 0.8rem 0.5rem;
+        font-size: 0.85rem;
+    }
+
+    .prayer-number {
+        font-size: 1.3rem;
+    }
+
+    .prayer-name {
+        font-size: 0.85rem;
+    }
+
+    .prayer-desc {
+        font-size: 0.75rem;
+    }
+
+    .prayer-content {
+        padding: 1rem;
+        max-height: 400px;
+        font-size: 0.95rem;
+        line-height: 1.8;
+    }
+
+    .bible-buttons {
+        gap: 0.8rem;
+    }
+
+    .bible-btn {
+        padding: 1rem;
+        font-size: 0.95rem;
+    }
+
+    .bible-content {
+        padding: 1rem;
+    }
+
+    .book-selector select {
+        font-size: 0.95rem;
+        padding: 0.7rem;
+    }
+
+    .chapter-list {
+        gap: 0.3rem;
+    }
+
+    .chapter-btn {
+        padding: 0.4rem;
+        font-size: 0.8rem;
+    }
+
+    .chapter-text {
+        padding: 1rem;
+        font-size: 0.95rem;
+        line-height: 1.8;
+    }
+
+    .commentary-content {
+        padding: 1rem;
+    }
+
+    .placeholder-content {
+        padding: 2rem 1rem;
+    }
+
+    .placeholder-content p {
+        font-size: 1rem;
+    }
+
+    .placeholder-content p:first-child {
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+    }
+
+    .about-card {
+        padding: 1.2rem;
+    }
+
+    .about-card h2 {
+        font-size: 1.4rem;
+    }
+
+    .about-card > p {
+        font-size: 1rem;
+    }
+
+    .about-section h3 {
+        font-size: 1.1rem;
+    }
+
+    .about-section li {
+        font-size: 0.9rem;
+        padding: 0.4rem 0;
+        padding-right: 0.8rem;
+    }
+
+    .loading-indicator {
+        padding: 1.5rem;
+    }
+}
+
+/* ==================== EXTRA SMALL (320px and below) ==================== */
+@media (max-width: 320px) {
+    .app-logo {
+        font-size: 1rem;
+    }
+
+    .main-content {
+        padding: 0.5rem;
+    }
+
+    .page-header h1 {
+        font-size: 1.2rem;
+    }
+
+    .welcome-section h1 {
+        font-size: 1.2rem;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .prayers-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .prayer-btn {
+        padding: 0.7rem 0.4rem;
+    }
+
+    .prayer-content {
+        font-size: 0.9rem;
+    }
+}
+
+/* ==================== LANDSCAPE ORIENTATION ==================== */
+@media (max-height: 600px) and (orientation: landscape) {
+    .navbar {
+        padding: 0.5rem 0;
+    }
+
+    .nav-content {
+        padding: 0.5rem 1rem;
+    }
+
+    .main-content {
+        padding: 0.8rem;
+    }
+
+    .page-header {
+        margin-bottom: 0.8rem;
+    }
+
+    .page-header h1 {
+        font-size: 1.5rem;
+    }
+
+    .prayers-grid {
+        gap: 0.8rem;
+    }
+
+    .prayer-btn {
+        padding: 0.8rem 0.5rem;
+    }
+
+    .prayer-content {
+        max-height: 300px;
+    }
+}
+
+/* ==================== PRINT MEDIA ==================== */
+@media print {
+    .navbar,
+    .menu-toggle,
+    .home-footer {
+        display: none;
+    }
+
+    .main-content {
+        padding: 0;
+        max-width: 100%;
+    }
+
+    .page {
+        page-break-after: always;
+    }
+
+    .prayer-btn,
+    .bible-btn,
+    .feature-card {
+        page-break-inside: avoid;
+    }
+
+    body {
+        background: white;
+    }
+
+    .page-header,
+    .prayer-content,
+    .bible-content,
+    .commentary-content,
+    .about-card {
+        box-shadow: none;
+        border: 1px solid #ddd;
+    }
+}
+
+/* ==================== HIGH DPI DISPLAYS ==================== */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .feature-card,
+    .prayer-btn,
+    .bible-btn {
+        border-width: 1px;
+    }
+}
+
+/* ==================== DARK MODE SUPPORT ==================== */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background-light: #1e1e1e;
+        --background-white: #2d2d2d;
+        --text-dark: #e0e0e0;
+        --text-gray: #b0b0b0;
+        --border-color: #404040;
+    }
+
+    body {
+        background-color: var(--background-light);
+        color: var(--text-dark);
+    }
+
+    .navbar {
+        box-shadow: var(--shadow-light);
+    }
+
+    .feature-card,
+    .prayer-content,
+    .bible-content,
+    .commentary-content,
+    .about-card {
+        background-color: var(--background-white);
+    }
+
+    .page-header,
+    .welcome-section {
+        color: white;
+    }
+
+    .placeholder-content {
+        background-color: var(--background-white);
+    }
+}
+
+/* ==================== ACCESSIBILITY ==================== */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+@media (min-width: 1024px) {
+    .main-content {
+        padding: 2rem 4rem;
+    }
+
+    .features-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .prayers-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
