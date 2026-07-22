@@ -3,60 +3,282 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mekha</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: 'Arial', sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        
-        .container {
-            text-align: center;
-            background: white;
-            padding: 50px;
-            border-radius: 10px;
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-            max-width: 500px;
-        }
-        
-        h1 {
-            color: #333;
-            margin-bottom: 20px;
-            font-size: 2.5em;
-        }
-        
-        .creator {
-            color: #666;
-            font-size: 1.2em;
-            margin-top: 30px;
-            padding-top: 20px;
-            border-top: 2px solid #667eea;
-        }
-        
-        .creator-name {
-            color: #667eea;
-            font-weight: bold;
-            margin-top: 10px;
-        }
-    </style>
+    <title>تطبيق الكنيسة - Mekha</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Mekha</h1>
-        <div class="creator">
-            <p>تم صنع بواسطة</p>
-            <p class="creator-name">ميخائي</p>
-        </div>
+    <div class="app-container">
+        <!-- Navigation Bar -->
+        <nav class="navbar">
+            <div class="nav-content">
+                <h1 class="app-logo">⛪ الكنيسة</h1>
+                <button class="menu-toggle" id="menuToggle">☰</button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#" data-page="home">الرئيسية</a></li>
+                    <li><a href="#" data-page="agpeya">الأجبية</a></li>
+                    <li><a href="#" data-page="bible">الكتاب المقدس</a></li>
+                    <li><a href="#" data-page="old-testament-commentary">تفسير عهد قديم</a></li>
+                    <li><a href="#" data-page="new-testament-commentary">تفسير عهد جديد</a></li>
+                    <li><a href="#" data-page="hymns">الترانيم</a></li>
+                    <li><a href="#" data-page="sunday-school">مدرسة الأحد</a></li>
+                    <li><a href="#" data-page="announcements">الإعلانات</a></li>
+                    <li><a href="#" data-page="service-notebook">دفتر الخدمة</a></li>
+                    <li><a href="#" data-page="about">عن التطبيق</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <!-- Home Page -->
+            <section id="home" class="page active">
+                <div class="home-container">
+                    <div class="welcome-section">
+                        <h1>أهلاً وسهلاً</h1>
+                        <p>تطبيق الكنيسة الشامل</p>
+                    </div>
+
+                    <div class="features-grid">
+                        <div class="feature-card" data-page="agpeya">
+                            <div class="feature-icon">📿</div>
+                            <h3>الأجبية</h3>
+                            <p>الصلوات اليومية الثماني</p>
+                        </div>
+
+                        <div class="feature-card" data-page="bible">
+                            <div class="feature-icon">📖</div>
+                            <h3>الكتاب المقدس</h3>
+                            <p>العهد القديم والعهد الجديد</p>
+                        </div>
+
+                        <div class="feature-card" data-page="old-testament-commentary">
+                            <div class="feature-icon">📚</div>
+                            <h3>تفسير عهد قديم</h3>
+                            <p>شرح الكتب القديمة</p>
+                        </div>
+
+                        <div class="feature-card" data-page="new-testament-commentary">
+                            <div class="feature-icon">✨</div>
+                            <h3>تفسير عهد جديد</h3>
+                            <p>شرح الكتب الجديدة</p>
+                        </div>
+
+                        <div class="feature-card" data-page="hymns">
+                            <div class="feature-icon">🎵</div>
+                            <h3>الترانيم</h3>
+                            <p>ترانيم الكنيسة</p>
+                        </div>
+
+                        <div class="feature-card" data-page="sunday-school">
+                            <div class="feature-icon">🎓</div>
+                            <h3>مدرسة الأحد</h3>
+                            <p>دروس تعليمية</p>
+                        </div>
+
+                        <div class="feature-card" data-page="announcements">
+                            <div class="feature-icon">📣</div>
+                            <h3>الإعلانات</h3>
+                            <p>آخر الأخبار</p>
+                        </div>
+
+                        <div class="feature-card" data-page="service-notebook">
+                            <div class="feature-icon">📝</div>
+                            <h3>دفتر الخدمة</h3>
+                            <p>جدول الخدمات</p>
+                        </div>
+                    </div>
+
+                    <footer class="home-footer">
+                        <p>Created by <strong>Mikhael Yasir</strong></p>
+                    </footer>
+                </div>
+            </section>
+
+            <!-- Agpeya Page -->
+            <section id="agpeya" class="page">
+                <div class="page-header">
+                    <h1>الأجبية</h1>
+                    <p>الصلوات اليومية الثماني</p>
+                </div>
+                <div class="agpeya-container">
+                    <div class="prayers-grid">
+                        <button class="prayer-btn" data-prayer="1">
+                            <span class="prayer-number">1️⃣</span>
+                            <span class="prayer-name">صلاة الساعة الأولى</span>
+                            <span class="prayer-desc">الفجر</span>
+                        </button>
+                        <button class="prayer-btn" data-prayer="2">
+                            <span class="prayer-number">🕘</span>
+                            <span class="prayer-name">صلاة الساعة الثالثة</span>
+                            <span class="prayer-desc">الصباح</span>
+                        </button>
+                        <button class="prayer-btn" data-prayer="3">
+                            <span class="prayer-number">☀️</span>
+                            <span class="prayer-name">صلاة الساعة السادسة</span>
+                            <span class="prayer-desc">الظهيرة</span>
+                        </button>
+                        <button class="prayer-btn" data-prayer="4">
+                            <span class="prayer-number">🌤️</span>
+                            <span class="prayer-name">صلاة الساعة التاسعة</span>
+                            <span class="prayer-desc">بعد الظهر</span>
+                        </button>
+                        <button class="prayer-btn" data-prayer="5">
+                            <span class="prayer-number">🌅</span>
+                            <span class="prayer-name">صلاة الغروب</span>
+                            <span class="prayer-desc">المساء</span>
+                        </button>
+                        <button class="prayer-btn" data-prayer="6">
+                            <span class="prayer-number">🌙</span>
+                            <span class="prayer-name">صلاة النوم</span>
+                            <span class="prayer-desc">قبل النوم</span>
+                        </button>
+                        <button class="prayer-btn" data-prayer="7">
+                            <span class="prayer-number">🌃</span>
+                            <span class="prayer-name">صلاة منتصف الليل</span>
+                            <span class="prayer-desc">منتصف الليل</span>
+                        </button>
+                        <button class="prayer-btn" data-prayer="8">
+                            <span class="prayer-number">⭐</span>
+                            <span class="prayer-name">صلاة الحجاب</span>
+                            <span class="prayer-desc">الختام</span>
+                        </button>
+                    </div>
+                </div>
+                <div id="prayer-content" class="prayer-content"></div>
+            </section>
+
+            <!-- Bible Page -->
+            <section id="bible" class="page">
+                <div class="page-header">
+                    <h1>الكتاب المقدس</h1>
+                    <p>العهد القديم والعهد الجديد</p>
+                </div>
+                <div class="bible-buttons">
+                    <button class="bible-btn" id="oldTestamentBtn">📖 العهد القديم</button>
+                    <button class="bible-btn" id="newTestamentBtn">✨ العهد الجديد</button>
+                    <button class="bible-btn" id="bibleCommentaryBtn">📚 التفاسير</button>
+                </div>
+                <div id="bible-content" class="bible-content"></div>
+            </section>
+
+            <!-- Old Testament Commentary Page -->
+            <section id="old-testament-commentary" class="page">
+                <div class="page-header">
+                    <h1>تفسير العهد القديم</h1>
+                    <p>شروح وتفسيرات الكتب القديمة</p>
+                </div>
+                <div id="ot-commentary-content" class="commentary-content"></div>
+            </section>
+
+            <!-- New Testament Commentary Page -->
+            <section id="new-testament-commentary" class="page">
+                <div class="page-header">
+                    <h1>تفسير العهد الجديد</h1>
+                    <p>شروح وتفسيرات الكتب الجديدة</p>
+                </div>
+                <div id="nt-commentary-content" class="commentary-content"></div>
+            </section>
+
+            <!-- Hymns Page -->
+            <section id="hymns" class="page">
+                <div class="page-header">
+                    <h1>الترانيم</h1>
+                    <p>ترانيم الكنيسة والعبادة</p>
+                </div>
+                <div class="placeholder-content">
+                    <p>🎵 قسم الترانيم قيد الإعداد</p>
+                    <p>سيتم إضافة مكتبة كاملة من ترانيم الكنيسة</p>
+                </div>
+            </section>
+
+            <!-- Sunday School Page -->
+            <section id="sunday-school" class="page">
+                <div class="page-header">
+                    <h1>مدرسة الأحد</h1>
+                    <p>دروس تعليمية وتثقيفية</p>
+                </div>
+                <div class="placeholder-content">
+                    <p>🎓 قسم مدرسة الأحد قيد الإعداد</p>
+                    <p>سيتم إضافة دروس تعليمية شاملة</p>
+                </div>
+            </section>
+
+            <!-- Announcements Page -->
+            <section id="announcements" class="page">
+                <div class="page-header">
+                    <h1>الإعلانات</h1>
+                    <p>آخر الأخبار والتحديثات</p>
+                </div>
+                <div class="placeholder-content">
+                    <p>📣 قسم الإعلانات قيد الإعداد</p>
+                    <p>سيتم إضافة الإعلانات والأخبار الكنسية</p>
+                </div>
+            </section>
+
+            <!-- Service Notebook Page -->
+            <section id="service-notebook" class="page">
+                <div class="page-header">
+                    <h1>دفتر الخدمة</h1>
+                    <p>جدول الخدمات والفعاليات</p>
+                </div>
+                <div class="placeholder-content">
+                    <p>📝 قسم دفتر الخدمة قيد الإعداد</p>
+                    <p>سيتم إضافة جداول الخدمات والفعاليات الكنسية</p>
+                </div>
+            </section>
+
+            <!-- About Page -->
+            <section id="about" class="page">
+                <div class="page-header">
+                    <h1>عن التطبيق</h1>
+                </div>
+                <div class="about-container">
+                    <div class="about-card">
+                        <h2>⛪ تطبيق الكنيسة</h2>
+                        <p>تطبيق شامل لخدمة أبناء الكنيسة والمؤمنين</p>
+                        
+                        <div class="about-section">
+                            <h3>المميزات:</h3>
+                            <ul>
+                                <li>📿 الأجبية - الصلوات اليومية الثماني</li>
+                                <li>📖 الكتاب المقدس - العهد القديم والجديد</li>
+                                <li>📚 التفسيرات الشاملة</li>
+                                <li>🎵 مكتبة ترانيم الكنيسة</li>
+                                <li>🎓 دروس مدرسة الأحد</li>
+                                <li>📣 الإعلانات والأخبار</li>
+                                <li>📝 جدول الخدمات</li>
+                            </ul>
+                        </div>
+
+                        <div class="about-section">
+                            <h3>تم التطوير بواسطة:</h3>
+                            <p><strong>Mikhael Yasir</strong></p>
+                        </div>
+
+                        <div class="about-section">
+                            <h3>الإصدار:</h3>
+                            <p>1.0.0 - 2026</p>
+                        </div>
+
+                        <div class="about-footer">
+                            <p>🙏 "مباركة لجميع زوار التطبيق" 🙏</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
     </div>
+
+    <!-- Loading Indicator -->
+    <div id="loadingIndicator" class="loading-indicator">
+        <div class="spinner"></div>
+        <p>جاري التحميل...</p>
+    </div>
+
+    <script src="js/app.js"></script>
+    <script src="js/agpeya.js"></script>
+    <script src="js/bible.js"></script>
+    <script src="js/commentary.js"></script>
 </body>
 </html>
